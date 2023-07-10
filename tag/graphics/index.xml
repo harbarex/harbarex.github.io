@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphics | Benedict Florance Arockiaraj</title>
+    <link>https://benedictflorance.github.io/tag/graphics/</link>
+      <atom:link href="https://benedictflorance.github.io/tag/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Graphics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://benedictflorance.github.io/media/icon_hu9eeb12546e8517e7f9c186d851ae3ad9_1969_512x512_fill_lanczos_center_3.png</url>
+      <title>Graphics</title>
+      <link>https://benedictflorance.github.io/tag/graphics/</link>
+    </image>
+    
+    <item>
+      <title>Mini Minecraft</title>
+      <link>https://benedictflorance.github.io/project/computer_graphics/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/project/computer_graphics/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Developed a mini-minecraft with various features including procedural generation of terrain, efficient storing and rendering of blocks, player physics, multi-threaded terrain loading, texturing and animation, procedurally-generated caves, day and night cycles, distance fog, dynamic clouds, inventory, water waves, sounds, L-system rivers and NPC AI.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

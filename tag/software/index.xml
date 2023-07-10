@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software | Benedict Florance Arockiaraj</title>
+    <link>https://benedictflorance.github.io/tag/software/</link>
+      <atom:link href="https://benedictflorance.github.io/tag/software/index.xml" rel="self" type="application/rss+xml" />
+    <description>Software</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://benedictflorance.github.io/media/icon_hu9eeb12546e8517e7f9c186d851ae3ad9_1969_512x512_fill_lanczos_center_3.png</url>
+      <title>Software</title>
+      <link>https://benedictflorance.github.io/tag/software/</link>
+    </image>
+    
+    <item>
+      <title>Holi Search Engine</title>
+      <link>https://benedictflorance.github.io/project/holi/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/project/holi/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Search Engine was built using four key components: crawler, indexer and data processor, ranker and frontend.&lt;/li&gt;
+&lt;li&gt;A corpus of 500k URLs were crawled and efficiently indexed. Sound ranking algorithms were used to rank results with a minimalistic UI to demonstrate the search engine.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PennCloud</title>
+      <link>https://benedictflorance.github.io/project/penn_cloud/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/project/penn_cloud/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Presented an excellent fault-tolerant PennCloud platform that supports a complete set of services with an intuitive user interface, including e.g., a webmail service for both local and remote users, a storage service for uploading and downloading of large files in any format, and an admin console for viewing and easy controlling of frontend and backend nodes&amp;rsquo; status and data.&lt;/li&gt;
+&lt;li&gt;Foundational to these services, the platform also features a solid, scalable system design with strong consistency, efficient fault detection and recovery, fast performance and great usability.&lt;/li&gt;
+&lt;li&gt;This project was included in the &lt;a href=&#34;https://www.cis.upenn.edu/~cis5050/hall_of_fame.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hall of Fame&lt;/a&gt; for being well-done in every aspect.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>M-Decoder (Online Math Challenge)</title>
+      <link>https://benedictflorance.github.io/project/mdecoder/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/project/mdecoder/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Developed the three-day online mathematical challenge MDecoder, where contestants answer mathematical questions of different difficulty levels from various disciplines of mathematics like algebra, geometry to applied maths&lt;/li&gt;
+&lt;li&gt;Built the web application using Angular library for the user interface, PHP framework Laravel for the backend service and hosted in Docker-based environment&lt;/li&gt;
+&lt;li&gt;Implemented efficient, foolproof algorithms for authentication, time-based scoring, question generation and submission validation&lt;/li&gt;
+&lt;li&gt;The contest was held as a part of &lt;a href=&#34;https://pragyan.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pragyan&lt;/a&gt;, the technical festival of NIT Trichy and it witnessed over 1000+ contestants and 15,000+ submissions.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Indian Railways EMU Production App</title>
+      <link>https://benedictflorance.github.io/project/icf/</link>
+      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/project/icf/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Developed the backend service for digitizing the records of inventory management, production planning and status updates of the coaches and rakes under the Digital India initiative&lt;/li&gt;
+&lt;li&gt;Wrote API’s in Laravel framework to handle authorization across Web and Android clients&lt;/li&gt;
+&lt;li&gt;The code was reviewed and pushed to production.&lt;/li&gt;
+&lt;li&gt;The Android application has been released on Google Play Store and is used by more than 500 employees of ICF, Chennai for internal purposes.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Smart Health Care System</title>
+      <link>https://benedictflorance.github.io/project/healthcare/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/project/healthcare/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Implemented deep learning models to predict disease risks based on user symptoms and lifestyle inputs as a collaborative pipeline between doctors and patients. Used web-scraped data for training the model&lt;/li&gt;
+&lt;li&gt;Built a recommendation system for analyzing the abnormal parameters and recommending future course of action like medicines and wrote APIs in Laravel for the Android application where the features were deployed&lt;/li&gt;
+&lt;li&gt;This project received a Special Mention at the Pragyan Hackathon conducted at SAP Labs, Bangalore.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

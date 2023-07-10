@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches | Benedict Florance Arockiaraj</title>
+    <link>https://benedictflorance.github.io/research/</link>
+      <atom:link href="https://benedictflorance.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <description>Researches</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 15 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://benedictflorance.github.io/media/icon_hu9eeb12546e8517e7f9c186d851ae3ad9_1969_512x512_fill_lanczos_center_3.png</url>
+      <title>Researches</title>
+      <link>https://benedictflorance.github.io/research/</link>
+    </image>
+    
+    <item>
+      <title>Linguistic Properties of Truthful Responses</title>
+      <link>https://benedictflorance.github.io/research/acl/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/research/acl/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;We investigate the phenomenon of an LLM&amp;rsquo;s untruthful response using a large set of 220 handcrafted linguistic features. We focus on GPT-3 models and find that the linguistic profiles of responses are similar across model sizes.&lt;/li&gt;
+&lt;li&gt;That is, how varying-sized LLMs respond to given prompts stays similar on the linguistic properties level.&lt;/li&gt;
+&lt;li&gt;We expand upon this finding by training support vector machines that rely only upon the stylistic components of model responses to classify the truthfulness of statements.&lt;/li&gt;
+&lt;li&gt;Though the dataset size limits our current findings, we present promising evidence that truthfulness detection is possible without evaluating the content itself.&lt;/li&gt;
+&lt;li&gt;This paper was accepted at TrustNLP @ ACL 2023&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Reinforcement Learning via World Models</title>
+      <link>https://benedictflorance.github.io/research/model_rl/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/research/model_rl/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Designing a model-based reinforcement-learning approach via world models using a novel combination of intrinsic and sparse extrinsic reward for robotic manipulation tasks in MetaWorld and adapting to new tasks exploiting prior experience.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Advisors:&lt;/strong&gt; &lt;a href=&#34;https://www.cis.upenn.edu/~kostas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kostas Daniilidis&lt;/a&gt; and &lt;a href=&#34;https://www.seas.upenn.edu/~oleh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oleg Rybkin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sensible Universal Adversarial Triggers</title>
+      <link>https://benedictflorance.github.io/research/adversarial_triggers/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/research/adversarial_triggers/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Proposed a novel technique combining parts-of-speech filtering and perplexity based loss
+function to generate sensible triggers that are
+closer to natural phrases.&lt;/li&gt;
+&lt;li&gt;For the task of sentiment analysis on the SST dataset, the method
+produced sensible triggers that achieve accura-
+cies as low as 4% and 12% for flipping positive to negative predictions and vice-versa.&lt;/li&gt;
+&lt;li&gt;To
+build robust models, performed adversarial training using the generated triggers that increases the accuracy of the model from 12% to
+48%.&lt;/li&gt;
+&lt;li&gt;Illustrated that adversarial at-
+tacks can be made difficult to detect by generating sensible triggers, and to facilitate robust
+model development through relevant defenses.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unsupervised 3D Human Pose Estimation</title>
+      <link>https://benedictflorance.github.io/research/iisc/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/research/iisc/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Wrote data-loaders and modeled the architecture for kinematic-structure preserving, unsupervised 3D pose estimation
+framework to effectively disentangle pose, foreground and background appearance information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduced MPJPE by as high
+as 40% (semi-supervised) and 15% (unsupervised) on datasets like Human3.6M, 3DHP, LSP and 3DPW.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Advisors&lt;/strong&gt;: &lt;a href=&#34;http://cds.iisc.ac.in/faculty/venky/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Venkatesh Babu&lt;/a&gt; and &lt;a href=&#34;https://sites.google.com/view/jogendra/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jogendra Nath Kundu&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Deep Domain Adaption for Object Detection</title>
+      <link>https://benedictflorance.github.io/research/uquebec/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://benedictflorance.github.io/research/uquebec/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Analyzed negative transfer (around 20% drop in mAP from baseline) and catastrophic forgetting of the existing imageto-image domain adaptation approaches on face-detection datasets.&lt;/li&gt;
+&lt;li&gt;Studied the use of local features, and temporal
+information from trackers to generalize unsupervised domain adaptation approaches on datasets like SCUT and Widerface.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Advisor:&lt;/strong&gt; &lt;a href=&#34;https://www.etsmtl.ca/en/research/professors/egranger&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eric Granger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

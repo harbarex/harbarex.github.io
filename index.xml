@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ankit Billa</title>
-    <link>https://meteorex11.github.io/</link>
-      <atom:link href="https://meteorex11.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://harbarex.github.io/</link>
+      <atom:link href="https://harbarex.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Ankit Billa</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://meteorex11.github.io/media/icon_hu9eeb12546e8517e7f9c186d851ae3ad9_1969_512x512_fill_lanczos_center_3.png</url>
+      <url>https://harbarex.github.io/media/icon_hu9eeb12546e8517e7f9c186d851ae3ad9_1969_512x512_fill_lanczos_center_3.png</url>
       <title>Ankit Billa</title>
-      <link>https://meteorex11.github.io/</link>
+      <link>https://harbarex.github.io/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://meteorex11.github.io/talk/example-talk/</link>
+      <link>https://harbarex.github.io/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/talk/example-talk/</guid>
+      <guid>https://harbarex.github.io/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,17 +34,17 @@
     
     <item>
       <title>Linguistic Properties of Truthful Responses</title>
-      <link>https://meteorex11.github.io/publication/conference-paper/</link>
+      <link>https://harbarex.github.io/publication/conference-paper/</link>
       <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/publication/conference-paper/</guid>
+      <guid>https://harbarex.github.io/publication/conference-paper/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linguistic Properties of Truthful Responses</title>
-      <link>https://meteorex11.github.io/research/acl/</link>
+      <link>https://harbarex.github.io/research/acl/</link>
       <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/research/acl/</guid>
+      <guid>https://harbarex.github.io/research/acl/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;We investigate the phenomenon of an LLM&amp;rsquo;s untruthful response using a large set of 220 handcrafted linguistic features. We focus on GPT-3 models and find that the linguistic profiles of responses are similar across model sizes.&lt;/li&gt;
 &lt;li&gt;That is, how varying-sized LLMs respond to given prompts stays similar on the linguistic properties level.&lt;/li&gt;
@@ -57,9 +57,9 @@
     
     <item>
       <title>Holi Search Engine</title>
-      <link>https://meteorex11.github.io/project/holi/</link>
+      <link>https://harbarex.github.io/project/holi/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/holi/</guid>
+      <guid>https://harbarex.github.io/project/holi/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Search Engine was built using four key components: crawler, indexer and data processor, ranker and frontend.&lt;/li&gt;
 &lt;li&gt;A corpus of 500k URLs were crawled and efficiently indexed. Sound ranking algorithms were used to rank results with a minimalistic UI to demonstrate the search engine.&lt;/li&gt;
@@ -69,9 +69,9 @@
     
     <item>
       <title>Mini Minecraft</title>
-      <link>https://meteorex11.github.io/project/computer_graphics/</link>
+      <link>https://harbarex.github.io/project/computer_graphics/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/computer_graphics/</guid>
+      <guid>https://harbarex.github.io/project/computer_graphics/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Developed a mini-minecraft with various features including procedural generation of terrain, efficient storing and rendering of blocks, player physics, multi-threaded terrain loading, texturing and animation, procedurally-generated caves, day and night cycles, distance fog, dynamic clouds, inventory, water waves, sounds, L-system rivers and NPC AI.&lt;/li&gt;
 &lt;/ul&gt;
@@ -80,9 +80,9 @@
     
     <item>
       <title>PennCloud</title>
-      <link>https://meteorex11.github.io/project/penn_cloud/</link>
+      <link>https://harbarex.github.io/project/penn_cloud/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/penn_cloud/</guid>
+      <guid>https://harbarex.github.io/project/penn_cloud/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Presented an excellent fault-tolerant PennCloud platform that supports a complete set of services with an intuitive user interface, including e.g., a webmail service for both local and remote users, a storage service for uploading and downloading of large files in any format, and an admin console for viewing and easy controlling of frontend and backend nodes&amp;rsquo; status and data.&lt;/li&gt;
 &lt;li&gt;Foundational to these services, the platform also features a solid, scalable system design with strong consistency, efficient fault detection and recovery, fast performance and great usability.&lt;/li&gt;
@@ -93,9 +93,9 @@
     
     <item>
       <title>Trajectory Prediction for Cruise Autonomous Cars</title>
-      <link>https://meteorex11.github.io/workex/trajectory_prediction/</link>
+      <link>https://harbarex.github.io/workex/trajectory_prediction/</link>
       <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/workex/trajectory_prediction/</guid>
+      <guid>https://harbarex.github.io/workex/trajectory_prediction/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Developed data, pre-processing and modeling pipeline for Transformers, GNNs-based trajectory prediction architecture that acts on vectorized map and agent information.&lt;/li&gt;
 &lt;li&gt;Improved prediction quality through lossless and long-range feature
@@ -106,9 +106,9 @@ representation, reduced prediction latency by 20%, and improved training and val
     
     <item>
       <title>Unsupervised Reinforcement Learning via World Models</title>
-      <link>https://meteorex11.github.io/research/model_rl/</link>
+      <link>https://harbarex.github.io/research/model_rl/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/research/model_rl/</guid>
+      <guid>https://harbarex.github.io/research/model_rl/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Designing a model-based reinforcement-learning approach via world models using a novel combination of intrinsic and sparse extrinsic reward for robotic manipulation tasks in MetaWorld and adapting to new tasks exploiting prior experience.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Advisors:&lt;/strong&gt; &lt;a href=&#34;https://www.cis.upenn.edu/~kostas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kostas Daniilidis&lt;/a&gt; and &lt;a href=&#34;https://www.seas.upenn.edu/~oleh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oleg Rybkin&lt;/a&gt;&lt;/li&gt;
@@ -118,9 +118,9 @@ representation, reduced prediction latency by 20%, and improved training and val
     
     <item>
       <title>Transfer Learning for Car-Racing Environments</title>
-      <link>https://meteorex11.github.io/project/transfer_rl/</link>
+      <link>https://harbarex.github.io/project/transfer_rl/</link>
       <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/transfer_rl/</guid>
+      <guid>https://harbarex.github.io/project/transfer_rl/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Used transfer learning to achieve the fast lap times in OpenAI’s Car racing environment by training the agent on one circuit, and racing it on other
 customized target environments by zero-shot transfer or by additional fine-tuning.&lt;/li&gt;
@@ -135,9 +135,9 @@ performance on the target domain, but also shows high performance ability during
     
     <item>
       <title>Counting Machine Washer Parts</title>
-      <link>https://meteorex11.github.io/project/counting_parts/</link>
+      <link>https://harbarex.github.io/project/counting_parts/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/counting_parts/</guid>
+      <guid>https://harbarex.github.io/project/counting_parts/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Extended density-map estimation based FamNet to count highly-occluded machine parts with a novel mismatch loss
 component, achieving a performance of 1.96 MAE (90% decrease from image processing baseline) on the challenge dataset.&lt;/li&gt;
@@ -147,9 +147,9 @@ component, achieving a performance of 1.96 MAE (90% decrease from image processi
     
     <item>
       <title>Sensible Universal Adversarial Triggers</title>
-      <link>https://meteorex11.github.io/research/adversarial_triggers/</link>
+      <link>https://harbarex.github.io/research/adversarial_triggers/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/research/adversarial_triggers/</guid>
+      <guid>https://harbarex.github.io/research/adversarial_triggers/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Proposed a novel technique combining parts-of-speech filtering and perplexity based loss
 function to generate sensible triggers that are
@@ -169,9 +169,9 @@ model development through relevant defenses.&lt;/li&gt;
     
     <item>
       <title>Visual Intelligence Analytics for FMCG Brands</title>
-      <link>https://meteorex11.github.io/workex/infilect/</link>
+      <link>https://harbarex.github.io/workex/infilect/</link>
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/workex/infilect/</guid>
+      <guid>https://harbarex.github.io/workex/infilect/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Built deep-learning pipelines using object detection, segmentation, fine-grained classification and self-supervised learning
 for retailers like Kimberly Clark, P&amp;amp;G, Lowe’s, Coke and ABInBev to provide real-time competitive intelligence and on-shelf
@@ -183,9 +183,9 @@ execution insights.&lt;/li&gt;
     
     <item>
       <title>Unsupervised 3D Human Pose Estimation</title>
-      <link>https://meteorex11.github.io/research/iisc/</link>
+      <link>https://harbarex.github.io/research/iisc/</link>
       <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/research/iisc/</guid>
+      <guid>https://harbarex.github.io/research/iisc/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Wrote data-loaders and modeled the architecture for kinematic-structure preserving, unsupervised 3D pose estimation
@@ -204,9 +204,9 @@ as 40% (semi-supervised) and 15% (unsupervised) on datasets like Human3.6M, 3DHP
     
     <item>
       <title>Ensemble-based Endoscopy Artefact Detection</title>
-      <link>https://meteorex11.github.io/project/nitt/</link>
+      <link>https://harbarex.github.io/project/nitt/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/nitt/</guid>
+      <guid>https://harbarex.github.io/project/nitt/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Proposed an ensemble of RetinaNet-based object detectors to localize bounding boxes and predict labels of eight different artefact classes that generalizes to an inter-patient, multi-tissue and a multi-modal corpus of endoscopy video frame data&lt;/p&gt;
@@ -226,9 +226,9 @@ as 40% (semi-supervised) and 15% (unsupervised) on datasets like Human3.6M, 3DHP
     
     <item>
       <title>Unsupervised Deep Domain Adaption for Object Detection</title>
-      <link>https://meteorex11.github.io/research/uquebec/</link>
+      <link>https://harbarex.github.io/research/uquebec/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/research/uquebec/</guid>
+      <guid>https://harbarex.github.io/research/uquebec/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Analyzed negative transfer (around 20% drop in mAP from baseline) and catastrophic forgetting of the existing imageto-image domain adaptation approaches on face-detection datasets.&lt;/li&gt;
 &lt;li&gt;Studied the use of local features, and temporal
@@ -240,9 +240,9 @@ information from trackers to generalize unsupervised domain adaptation approache
     
     <item>
       <title>Highlights Generation for Cricket Videos</title>
-      <link>https://meteorex11.github.io/project/cricket/</link>
+      <link>https://harbarex.github.io/project/cricket/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/cricket/</guid>
+      <guid>https://harbarex.github.io/project/cricket/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Employed video frame segmentation, replay and scoreboard detection on a newly constructed dataset of IPL cricket videos.&lt;/p&gt;
@@ -256,9 +256,9 @@ information from trackers to generalize unsupervised domain adaptation approache
     
     <item>
       <title>Slides</title>
-      <link>https://meteorex11.github.io/slides/example/</link>
+      <link>https://harbarex.github.io/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/slides/example/</guid>
+      <guid>https://harbarex.github.io/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://wowchemy.com/docs/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -381,9 +381,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Indian Flora Project</title>
-      <link>https://meteorex11.github.io/project/iiith/</link>
+      <link>https://harbarex.github.io/project/iiith/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/iiith/</guid>
+      <guid>https://harbarex.github.io/project/iiith/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Performed transfer learning on various CNN models using our new Indic-Leaf dataset of 112 Indian plants for identification and disease detection with results showing Top-1 and Top-5 precision of 90.08 and 96.90&lt;/p&gt;
@@ -400,9 +400,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>M-Decoder (Online Math Challenge)</title>
-      <link>https://meteorex11.github.io/project/mdecoder/</link>
+      <link>https://harbarex.github.io/project/mdecoder/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/mdecoder/</guid>
+      <guid>https://harbarex.github.io/project/mdecoder/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Developed the three-day online mathematical challenge MDecoder, where contestants answer mathematical questions of different difficulty levels from various disciplines of mathematics like algebra, geometry to applied maths&lt;/li&gt;
 &lt;li&gt;Built the web application using Angular library for the user interface, PHP framework Laravel for the backend service and hosted in Docker-based environment&lt;/li&gt;
@@ -414,9 +414,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Indian Railways EMU Production App</title>
-      <link>https://meteorex11.github.io/project/icf/</link>
+      <link>https://harbarex.github.io/project/icf/</link>
       <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/icf/</guid>
+      <guid>https://harbarex.github.io/project/icf/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Developed the backend service for digitizing the records of inventory management, production planning and status updates of the coaches and rakes under the Digital India initiative&lt;/li&gt;
 &lt;li&gt;Wrote API’s in Laravel framework to handle authorization across Web and Android clients&lt;/li&gt;
@@ -428,9 +428,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Smart Health Care System</title>
-      <link>https://meteorex11.github.io/project/healthcare/</link>
+      <link>https://harbarex.github.io/project/healthcare/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/project/healthcare/</guid>
+      <guid>https://harbarex.github.io/project/healthcare/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Implemented deep learning models to predict disease risks based on user symptoms and lifestyle inputs as a collaborative pipeline between doctors and patients. Used web-scraped data for training the model&lt;/li&gt;
 &lt;li&gt;Built a recommendation system for analyzing the abnormal parameters and recommending future course of action like medicines and wrote APIs in Laravel for the Android application where the features were deployed&lt;/li&gt;
@@ -441,9 +441,9 @@ $$&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://meteorex11.github.io/admin/config.yml</link>
+      <link>https://harbarex.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://meteorex11.github.io/admin/config.yml</guid>
+      <guid>https://harbarex.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     

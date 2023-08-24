@@ -5,129 +5,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
-
-  
+  <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
   
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
   
-
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-
   <meta name="author" content="Ankit Billa" />
+  <meta name="description" content="Predicting whether a SONAR detected object is a mine or a rock." />
 
+  <link rel="alternate" hreflang="en-us" href="https://harbarex.github.io/project/sonar/" />
   
+  <meta name="theme-color" content="#1565c0" />
   
-  <meta name="description" content="3D tracking across time and space for automating retail stores." />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://meteorex11.github.io/research/kit/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
-
-  
-  
-
-  
-
   <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
-
-  
-  
-  
-    
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="/css/wowchemy.e16b071c3437dd38fe4bc6049c3c2fff.css" />
-
-    
-    
-    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
-    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
   
-
-  
-  
-
-
-
-  
-
-
-  
-
-
-  
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  
+  <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+  <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" type="image/png" href="/media/icon_a_medium.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_a_medium.png" />
+  <link rel="canonical" href="https://harbarex.github.io/project/sonar/" />
 
-  <link rel="canonical" href="https://meteorex11.github.io/research/kit/" />
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  
-
-  
-  
-    
-    
-  
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Ankit Billa" />
-  <meta property="og:url" content="https://meteorex11.github.io/project/sonar/" />
+  <meta property="og:url" content="https://harbarex.github.io/project/sonar/" />
   <meta property="og:title" content="SONAR Mine Classifier | Ankit Billa" />
-  <meta property="og:description" content="A regression-based method to predict whether a SONAR detected object is a mine or a rock.." /><meta property="og:image" content="https://meteorex11.github.io/research/sonar/featured.png" />
-  
-    
-      <meta
-        property="article:published_time"
-        content="2021-07-11T00:00:00&#43;00:00"
-      />
-    
-    <meta property="article:modified_time" content="2021-07-11T00:00:00&#43;00:00">
-  
-  
-
+  <meta property="og:description" content="A regression-based method to predict whether a SONAR detected object is a mine or a rock.." /><meta property="og:image" content="https://harbarex.github.io/research/sonar/featured.png" />
+  <meta property="article:published_time" content="2021-07-11T00:00:00&#43;00:00"/>
+  <meta property="article:modified_time" content="2021-07-11T00:00:00&#43;00:00">
 
   <title>SONAR Mine Classifier | Ankit Billa</title>
 
@@ -136,273 +45,223 @@
 
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3a00e16f1867fe68d248443b86e54cd2" >
- 
   
   <script src="/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
-
   
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
+  <aside class="search-modal" id="search">
+    <div class="container">
+      <section class="search-header">
+        <div class="row no-gutters justify-content-between mb-3">
+          <div class="col-6">
+            <h1>Search</h1>
+          </div>
+          <div class="col-6 col-search-close">
+            <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+          </div>
         </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+  
+        <div id="search-box">
+          
+          <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+          autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+          aria-label="Search...">
+          
         </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
       
+      </section>
       
-
-      
-
-    </section>
-    <section class="section-search-results">
+      <section class="section-search-results">
 
       <div id="search-hits">
         
       </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="header--fixed">
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-    <div class="container-xl">
-
-      
-      <div class="d-none d-lg-inline-flex">
-        <a class="navbar-brand" href="/">Ankit Billa</a>
-      </div>
-      
-
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-      
-      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class="navbar-brand" href="/">Ankit Billa</a>
-      </div>
-      
-
-      
-      
-      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-        
-        <ul class="navbar-nav d-md-inline-flex">
-          
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#about"><span>Home</span></a>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#workex"><span>Work</span></a>
-          </li>
-         
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#publications"><span>Publications</span></a>
-          </li>
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#research"><span>Research</span></a>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#projects"><span>Projects</span></a>
-          </li>
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/uploads/resume.pdf"><span>CV</span></a>
-          </li>
-
-          
-          <li class="nav-item">
-            <a class="nav-link " href="/#contact"><span>Contact</span></a>
-          </li>
-
-        </ul>
-      </div>
-
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-        
-        
-          
-        
-
-        
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-        
-        
-        <li class="nav-item dropdown theme-dropdown">
-          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item js-set-theme-light">
-              <span>Light</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-dark">
-              <span>Dark</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-auto">
-              <span>Automatic</span>
-            </a>
-          </div>
-        </li>
-        
-
-        
-        
-
-      </ul>
-
+      </section>
     </div>
-  </nav>
-</header>
+  </aside>
 
+  
+  <div class="page-header">
+    <header class="header--fixed">
+      <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+        <div class="container-xl">
+    
+          
+          <div class="d-none d-lg-inline-flex">
+            <a class="navbar-brand" href="/">Ankit Billa</a>
+          </div>
+          
+    
+          
+          <button type="button" class="navbar-toggler" data-toggle="collapse"
+                  data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fas fa-bars"></i></span>
+          </button>
+          
+    
+          
+          <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+            <a class="navbar-brand" href="/">Ankit Billa</a>
+          </div>
+          
+    
+          
+          
+          <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+    
+            
+            <ul class="navbar-nav d-md-inline-flex">
+              
+              
+    
+              <li class="nav-item">
+                <a class="nav-link " href="/#about"><span>Home</span></a>
+              </li>
+    
+    
+              <li class="nav-item">
+                <a class="nav-link " href="/#workex"><span>Work</span></a>
+              </li>
+             
+    
+              <li class="nav-item">
+                <a class="nav-link " href="/#publications"><span>Publications</span></a>
+              </li>
+              
+    
+              <li class="nav-item">
+                <a class="nav-link " href="/#research"><span>Research</span></a>
+              </li>
+    
+    
+              <li class="nav-item">
+                <a class="nav-link " href="/#projects"><span>Projects</span></a>
+              </li>
+              
+    
+              <li class="nav-item">
+                <a class="nav-link " href="/uploads/resume.pdf"><span>CV</span></a>
+              </li>
+    
+              
+              <li class="nav-item">
+                <a class="nav-link " href="/#contact"><span>Contact</span></a>
+              </li>
+    
+            </ul>
+          </div>
+    
+          <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
 
+            <li class="nav-item">
+              <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+            </li>
+
+            <li class="nav-item dropdown theme-dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item js-set-theme-light">
+                  <span>Light</span>
+                </a>
+                <a href="#" class="dropdown-item js-set-theme-dark">
+                  <span>Dark</span>
+                </a>
+                <a href="#" class="dropdown-item js-set-theme-auto">
+                  <span>Automatic</span>
+                </a>
+              </div>
+            </li>
+            
+    
+            
+            
+    
+          </ul>
+    
+        </div>
+      </nav>
+    </header>
+  
   </div>
 
   <div class="page-body">
-    
-    
-    
-
     <article class="article">
-
-  
-
-
-<div class="article-container pt-3">
-  <h1>SONAR Mine Classifier</h1>
-
-  
-
-  
-
-
-<div class="article-metadata">
-
-  
-  <span class="article-date">
-    Nov 26, 2018
-  </span>
-  
-
-</div>
-
-
-
-<div class="btn-links mb-3">
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/harbarex/SONAR-Object-Classifier" target="_blank" rel="noopener">Code</a>
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1vFuX5yXSjlUfiZnHdPmiQiDeoQBMrjN_/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
-</div>
-
-</div>
-
-
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 480px;">
-  <div style="position: relative">
-    <img src="/project/sonar/featured.png" width="720" height="480" alt="" class="featured-image">
-    <span class="article-header-caption">Predicting whether a SONAR detected object is a mine or a rock.</span>
-  </div>
-</div>
+      <div class="article-container pt-3">
+        <h1>SONAR Mine Classifier</h1>
+        
+        <div class="article-metadata">
+          <span class="article-date">
+            Nov 26, 2018
+          </span>
+          
+        
+        </div>
+        
+        
+        
+        <div class="btn-links mb-3">
+          <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/harbarex/SONAR-Object-Classifier" target="_blank" rel="noopener">Code</a>
+          <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1vFuX5yXSjlUfiZnHdPmiQiDeoQBMrjN_/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+        </div>
+        
+        </div>
+        
+        
+        <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 480px;">
+          <div style="position: relative">
+            <img src="/project/sonar/featured.png" width="720" height="480" alt="" class="featured-image">
+            <span class="article-header-caption">Predicting whether a SONAR detected object is a mine or a rock.</span>
+          </div>
+        </div>
 
 
 
-  <div class="article-container">
-
-    <div class="article-style">
-
-      <p align="justify">
-        <ul align="justify">
-          <li>A regression-based method to predict whether a SONAR detected object is a mine or a rock.</li>
-        </ul>
-      </p>
-
-    </div>
-
-    <div class="article-tags">
-      <a class="badge badge-light">ML</a>
-    </div>
-  
-  </div>
-    </article>
-  </div>
-</div>
+        <div class="article-container">
+      
+          <div class="article-style">
+      
+            <p align="justify">
+              <ul align="justify">
+                <li> Built a Multi-layer Perceptron pipeline to classify rocks and mines in the <a href="http://archive.ics.uci.edu/dataset/151/connectionist+bench+sonar+mines+vs+rocks">SONAR</a> dataset.</li>
+                <li> Performed Exploratory Data Analysis and batched Gradient Descent for model training.</li>
+              </ul>
+            </p>
+      
+          </div>
+      
+          <div class="article-tags">
+            <a class="badge badge-light">ML</a>
+          </div>
+        
+        </div>
+          </article>
+        </div>
+      </div>
 
     
 
 
-<div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-
-          <p class="powered-by footer-license-icons">
-          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
-            <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
-            <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      <div class="page-footer">
+          
+          
+          <div class="container">
+            <footer class="site-footer">
       
-              <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+                <p class="powered-by footer-license-icons">
+                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+                  <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+                  <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+            
+                    <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+            
+            
+                    <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+            
+                </a>
+              </p>
       
-      
-              <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
-      
-          </a>
-        </p>
-
-</footer>
+      </footer>
 
     </div>
     
@@ -413,29 +272,6 @@
 
 <script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
 
-
-
-
-  
-
-  
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   <script id="search-hit-fuse-template" type="text/x-template">
     <div class="search-hit" id="summary-{{key}}">
       <div class="search-hit-content">

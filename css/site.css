@@ -163,9 +163,10 @@ header.scrolled .icon-btn{width:34px;height:34px}
 /* ---------- Education ---------- */
 .edu-sec{padding:clamp(48px,7vh,72px) 0}
 .edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch}
-.edu-item{display:flex;align-items:center;gap:14px;border:1px solid var(--border);border-radius:var(--radius);
-  background:var(--surface);padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
-.edu-item:hover{transform:translateY(-3px);border-color:var(--border-strong)}
+/* Current-role pill — charcoal to match the Sauron logo background */
+.edu-item{display:flex;align-items:center;gap:14px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
+  background:#222222;padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
+.edu-item:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.32)}
 /* Education degrees: plain (no pill), one grad-cap per degree */
 .edu-degrees{display:flex;flex-direction:column;gap:20px;padding:8px 0}
 .edu-row{display:flex;align-items:flex-start;gap:14px}
@@ -174,6 +175,9 @@ header.scrolled .icon-btn{width:34px;height:34px}
 .edu-ico svg{width:1.3em;height:1.3em}
 .edu-item h3,.edu-row h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .edu-item p,.edu-row p{color:var(--muted);font-size:.92rem;margin-top:3px}
+.edu-item h3{color:#f5f5f7}
+.edu-item p{color:rgba(245,245,247,.6)}
+.work-logo{display:block;width:180px;height:40px;object-fit:cover;margin:10px 0}
 @media (max-width:680px){.edu{grid-template-columns:1fr}}
 
 /* ---------- Gallery (Apple horizontal scroller) ---------- */

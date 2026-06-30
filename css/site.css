@@ -135,7 +135,7 @@ header.scrolled .icon-btn{width:34px;height:34px}
 .profile{display:grid;grid-template-columns:0.85fr 1.15fr;gap:clamp(34px,5vw,68px);align-items:center}
 .profile-info h1{font-size:clamp(2.6rem,5vw,4rem);line-height:1;letter-spacing:-.04em;font-weight:600}
 .role{font-size:clamp(1.1rem,2vw,1.4rem);color:var(--muted);margin-top:12px;font-weight:500;letter-spacing:-.01em}
-.bio{color:var(--muted);font-size:1.08rem;line-height:1.55;letter-spacing:-.01em;margin-top:22px;max-width:62ch}
+.bio{color:var(--muted);font-size:1.08rem;line-height:1.55;letter-spacing:-.01em;margin-top:22px;max-width:62ch;text-align:justify}
 .bio strong{color:var(--text);font-weight:600}
 .bio a{color:var(--accent)}
 .bio-list{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;text-align:left}

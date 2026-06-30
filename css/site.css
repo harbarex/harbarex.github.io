@@ -155,7 +155,8 @@ header.scrolled{border-bottom-color:var(--border)}
 .edu-item:hover{transform:translateY(-3px);border-color:var(--border-strong)}
 /* Education degrees: plain (no pill), one grad-cap per degree */
 .edu-degrees{display:flex;flex-direction:column;gap:20px;padding:8px 0}
-.edu-row{display:flex;align-items:center;gap:14px}
+.edu-row{display:flex;align-items:flex-start;gap:14px}
+.edu-row .edu-ico{margin-top:2px}
 .edu-ico{flex:0 0 auto;color:var(--accent);display:flex}
 .edu-ico svg{width:1.3em;height:1.3em}
 .edu-item h3,.edu-row h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}

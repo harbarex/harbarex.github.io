@@ -83,20 +83,24 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;
   background:var(--navbg);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
   border-bottom:1px solid transparent;transition:border-color .4s,background .4s}
 header.scrolled{border-bottom-color:var(--border)}
-.nav{display:flex;align-items:center;justify-content:center;position:relative;height:50px;max-width:var(--maxw);margin:0 auto;padding:0 22px;gap:18px}
+/* Base (top of page) nav is larger; it shrinks smoothly to compact once scrolled. */
+.nav{display:flex;align-items:center;justify-content:center;position:relative;height:72px;max-width:var(--maxw);margin:0 auto;padding:0 22px;gap:18px;transition:height .35s var(--ease)}
+header.scrolled .nav{height:52px}
 .brand{display:flex;align-items:center;gap:9px;font-weight:600;font-size:1.02rem;letter-spacing:-.02em}
 .brand .mark{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font-weight:700;font-size:.82rem;
   background:var(--text);color:var(--bg)}
 [data-theme="dark"] .brand .mark{background:var(--accent);color:#001018;box-shadow:0 0 18px -2px var(--glow)}
 .nav-links{display:flex;align-items:center;gap:2px}
-.nav-links a{padding:7px 12px;border-radius:8px;font-size:.82rem;font-weight:400;color:var(--muted);
-  transition:color .2s,background .2s}
+.nav-links a{padding:9px 16px;border-radius:9px;font-size:1.02rem;font-weight:400;color:var(--muted);
+  transition:color .2s,background .2s,font-size .35s var(--ease),padding .35s var(--ease)}
+header.scrolled .nav-links a{padding:7px 12px;font-size:.82rem}
 .nav-links a:hover,.nav-links a.active{color:var(--text)}
 .nav-actions{display:flex;align-items:center;gap:10px;position:absolute;right:22px;top:0;bottom:0}
-.icon-btn{width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--muted);
-  display:grid;place-items:center;cursor:pointer;transition:all .25s var(--ease)}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--muted);
+  display:grid;place-items:center;cursor:pointer;transition:color .25s var(--ease),border-color .25s var(--ease),width .35s var(--ease),height .35s var(--ease)}
+header.scrolled .icon-btn{width:34px;height:34px}
 .icon-btn:hover{color:var(--text);border-color:var(--border-strong)}
-.icon-btn svg{width:16px;height:16px}
+.icon-btn svg{width:17px;height:17px}
 .menu-toggle{display:none}
 
 /* ---------- Buttons ---------- */

@@ -77,7 +77,7 @@
         var r=t.getBoundingClientRect(),dt=Math.abs(r.left+r.width/2-mid)/sp;  // distance from centre in tile-widths
         var f=Math.min(1,Math.max(0,(dt-1.8)/0.9));    // centre ~4 tiles crisp, then ramp to the edges
         t.style.opacity=(1-0.5*f).toFixed(3);
-        t.style.filter=f>0.02?'blur('+(2*f).toFixed(2)+'px)':'';
+        t.style.filter=f>0.02?'blur('+(1*f).toFixed(2)+'px)':'';
       });
     }
     function onScroll(){update();if(!raf)raf=requestAnimationFrame(focus)}

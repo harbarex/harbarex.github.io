@@ -9,7 +9,7 @@
   if(saved){root.setAttribute('data-theme',saved)}
   else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:light)').matches){root.setAttribute('data-theme','light')}
   function setMeta(){var m=document.querySelector('meta[name=theme-color]');
-    if(m)m.setAttribute('content',root.getAttribute('data-theme')==='dark'?'#000000':'#ffffff')}
+    if(m)m.setAttribute('content',root.getAttribute('data-theme')==='dark'?'#1a1f2b':'#ffffff')}
   setMeta();
   var tt=document.getElementById('theme-toggle');
   if(tt)tt.addEventListener('click',function(){

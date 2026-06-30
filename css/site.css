@@ -153,13 +153,12 @@ header.scrolled{border-bottom-color:var(--border)}
 
 /* ---------- Education ---------- */
 .edu-sec{padding:clamp(48px,7vh,72px) 0}
-.edu-title{font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-.03em;font-weight:600;margin-bottom:26px}
 .edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.edu-item{display:flex;align-items:center;gap:18px;border:1px solid var(--border);border-radius:var(--radius);
+.edu-item{display:flex;align-items:center;gap:14px;border:1px solid var(--border);border-radius:var(--radius);
   background:var(--surface);padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
 .edu-item:hover{transform:translateY(-3px);border-color:var(--border-strong)}
-.edu-ico{flex:0 0 auto;width:48px;height:48px;border-radius:14px;background:var(--accent);color:#fff;display:grid;place-items:center}
-.edu-ico svg{width:25px;height:25px}
+.edu-ico{flex:0 0 auto;color:var(--accent);display:flex}
+.edu-ico svg{width:1.3em;height:1.3em}
 .edu-item h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .edu-item p{color:var(--muted);font-size:.92rem;margin-top:3px}
 @media (max-width:680px){.edu{grid-template-columns:1fr}}

@@ -74,9 +74,9 @@
       var gr=g.getBoundingClientRect(),mid=gr.left+gr.width/2,half=gr.width/2||1;
       tiles.forEach(function(t){
         var r=t.getBoundingClientRect(),nd=Math.abs(r.left+r.width/2-mid)/half;
-        var f=Math.min(1,Math.max(0,(nd-0.42)/0.45));  // 0 across the centre tiles, 1 at the edges
-        t.style.opacity=(1-0.6*f).toFixed(3);
-        t.style.filter=f>0.02?'blur('+(5*f).toFixed(2)+'px)':'';
+        var f=Math.min(1,Math.max(0,(nd-0.34)/0.5));   // 0 across the centre tiles, 1 at the edges
+        t.style.opacity=(1-0.65*f).toFixed(3);
+        t.style.filter=f>0.02?'blur('+(8*f).toFixed(2)+'px)':'';
       });
     }
     function onScroll(){update();if(!raf)raf=requestAnimationFrame(focus)}

@@ -149,15 +149,17 @@ header.scrolled{border-bottom-color:var(--border)}
 
 /* ---------- Education ---------- */
 .edu-sec{padding:clamp(48px,7vh,72px) 0}
-.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:center}
 .edu-item{display:flex;align-items:center;gap:14px;border:1px solid var(--border);border-radius:var(--radius);
   background:var(--surface);padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
 .edu-item:hover{transform:translateY(-3px);border-color:var(--border-strong)}
-.edu-list{display:flex;flex-direction:column;gap:18px}
+/* Education degrees: plain (no pill), one grad-cap per degree */
+.edu-degrees{display:flex;flex-direction:column;gap:20px;padding:8px 0}
+.edu-row{display:flex;align-items:center;gap:14px}
 .edu-ico{flex:0 0 auto;color:var(--accent);display:flex}
 .edu-ico svg{width:1.3em;height:1.3em}
-.edu-item h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
-.edu-item p{color:var(--muted);font-size:.92rem;margin-top:3px}
+.edu-item h3,.edu-row h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.edu-item p,.edu-row p{color:var(--muted);font-size:.92rem;margin-top:3px}
 @media (max-width:680px){.edu{grid-template-columns:1fr}}
 
 /* ---------- Gallery (Apple horizontal scroller) ---------- */

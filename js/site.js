@@ -71,10 +71,11 @@
     var tiles=g.querySelectorAll('.gtile'),raf=null;
     function focus(){
       raf=null;
-      var gr=g.getBoundingClientRect(),mid=gr.left+gr.width/2,half=gr.width/2||1;
+      var gr=g.getBoundingClientRect(),mid=gr.left+gr.width/2;
+      var sp=(tiles[0]?tiles[0].getBoundingClientRect().width:300)+20;  // tile width + gap
       tiles.forEach(function(t){
-        var r=t.getBoundingClientRect(),nd=Math.abs(r.left+r.width/2-mid)/half;
-        var f=Math.min(1,Math.max(0,(nd-0.72)/0.32));  // ~centre 4 tiles stay crisp, then ramp to the edges
+        var r=t.getBoundingClientRect(),dt=Math.abs(r.left+r.width/2-mid)/sp;  // distance from centre in tile-widths
+        var f=Math.min(1,Math.max(0,(dt-1.8)/0.9));    // centre ~4 tiles crisp, then ramp to the edges
         t.style.opacity=(1-0.5*f).toFixed(3);
         t.style.filter=f>0.02?'blur('+(4*f).toFixed(2)+'px)':'';
       });

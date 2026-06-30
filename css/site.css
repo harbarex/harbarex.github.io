@@ -151,6 +151,19 @@ header.scrolled{border-bottom-color:var(--border)}
   .socials{justify-content:center}
 }
 
+/* ---------- Education ---------- */
+.edu-sec{padding:clamp(48px,7vh,72px) 0}
+.edu-title{font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-.03em;font-weight:600;margin-bottom:26px}
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.edu-item{display:flex;align-items:center;gap:18px;border:1px solid var(--border);border-radius:var(--radius);
+  background:var(--surface);padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
+.edu-item:hover{transform:translateY(-3px);border-color:var(--border-strong)}
+.edu-ico{flex:0 0 auto;width:48px;height:48px;border-radius:14px;background:var(--accent);color:#fff;display:grid;place-items:center}
+.edu-ico svg{width:25px;height:25px}
+.edu-item h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.edu-item p{color:var(--muted);font-size:.92rem;margin-top:3px}
+@media (max-width:680px){.edu{grid-template-columns:1fr}}
+
 /* ---------- About ---------- */
 .statement{font-size:clamp(1.6rem,3.6vw,2.8rem);line-height:1.18;letter-spacing:-.03em;font-weight:600;max-width:22ch;margin:0 auto;text-align:center}
 .statement .dim{color:var(--muted)}
@@ -179,7 +192,7 @@ header.scrolled{border-bottom-color:var(--border)}
   padding:8px var(--gutter) 28px;scroll-padding-left:var(--gutter);
   -ms-overflow-style:none;scrollbar-width:none}
 .gallery::-webkit-scrollbar{display:none}
-.gtile{flex:0 0 auto;width:clamp(260px,72vw,380px);scroll-snap-align:start;transition:opacity .4s var(--ease),filter .4s var(--ease)}
+.gtile{flex:0 0 auto;width:clamp(220px,32vw,300px);scroll-snap-align:start;transition:opacity .4s var(--ease),filter .4s var(--ease)}
 .gtile:hover{opacity:1!important;filter:none!important}
 .gtile .shot{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:var(--surface-2);
   border:1px solid var(--border);transition:transform .5s var(--ease),box-shadow .5s,border-color .5s}

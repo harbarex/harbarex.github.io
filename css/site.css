@@ -162,7 +162,7 @@ header.scrolled .icon-btn{width:34px;height:34px}
 
 /* ---------- Education ---------- */
 .edu-sec{padding:clamp(48px,7vh,72px) 0}
-.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:center}
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch}
 .edu-item{display:flex;align-items:center;gap:14px;border:1px solid var(--border);border-radius:var(--radius);
   background:var(--surface);padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
 .edu-item:hover{transform:translateY(-3px);border-color:var(--border-strong)}

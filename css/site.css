@@ -119,9 +119,9 @@ header.scrolled{border-bottom-color:var(--border)}
 [data-theme="dark"] .eyebrow .dot{box-shadow:0 0 10px 1px var(--accent)}
 .sec-num{font-family:var(--mono);font-size:.74rem;color:var(--accent);letter-spacing:.12em}
 .sec{padding:clamp(72px,11vh,128px) 0}
-.sec-head{margin-bottom:46px;max-width:30ch}
-.sec-head h2{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.06;letter-spacing:-.03em;font-weight:600;margin:12px 0 16px}
-.sec-head p{color:var(--muted);font-size:clamp(1.05rem,1.7vw,1.35rem);max-width:46ch;letter-spacing:-.01em}
+.sec-head{margin-bottom:46px;max-width:none}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.06;letter-spacing:-.03em;font-weight:600;margin:0 0 14px}
+.sec-head p{color:var(--muted);font-size:clamp(1.05rem,1.7vw,1.35rem);max-width:68ch;letter-spacing:-.01em}
 .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
 .sec-head.center p{margin-left:auto;margin-right:auto}
 

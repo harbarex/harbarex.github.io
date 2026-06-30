@@ -602,6 +602,7 @@ footer{border-top:1px solid var(--border);padding:36px 0;margin-top:40px}
     root.setAttribute('data-theme',next);
     try{localStorage.setItem('theme',next)}catch(e){}
     var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',next==='dark'?'#0a0b0e':'#f6f7fb');
+    if(window.__pcloudAccent)window.__pcloudAccent();
   });
 
   // Sticky nav
@@ -663,9 +664,13 @@ footer{border-top:1px solid var(--border);padding:36px 0;margin-top:40px}
     }
     size();window.addEventListener('resize',size);
     for(var i=0;i<46;i++){pts.push({x:Math.random(),y:Math.random(),vx:(Math.random()-.5)*.0006,vy:(Math.random()-.5)*.0006,r:Math.random()*1.6+.6})}
-    function accent(){return getComputedStyle(root).getPropertyValue('--accent').trim()||'#5eead4'}
-    function draw(){
-      ctx.clearRect(0,0,W,H);var col=accent();
+    // Cache accent; recompute only when the theme actually changes (not every frame).
+    var col=getComputedStyle(root).getPropertyValue('--accent').trim()||'#5eead4';
+    window.__pcloudAccent=function(){col=getComputedStyle(root).getPropertyValue('--accent').trim()||'#5eead4'};
+    var raf=null,onscreen=true;
+    function frame(){
+      raf=null;
+      ctx.clearRect(0,0,W,H);
       for(var i=0;i<pts.length;i++){var p=pts[i];
         p.x+=p.vx;p.y+=p.vy;
         if(p.x<0||p.x>1)p.vx*=-1;if(p.y<0||p.y>1)p.vy*=-1;
@@ -679,9 +684,17 @@ footer{border-top:1px solid var(--border);padding:36px 0;margin-top:40px}
         ctx.globalAlpha=.55;ctx.fillStyle=col;ctx.beginPath();
         ctx.arc(pp.x*W,pp.y*H,pp.r,0,6.283);ctx.fill();
       }
-      ctx.globalAlpha=1;requestAnimationFrame(draw);
+      ctx.globalAlpha=1;
+      if(onscreen&&!document.hidden)raf=requestAnimationFrame(frame);
     }
-    draw();
+    function run(){if(!raf&&onscreen&&!document.hidden)raf=requestAnimationFrame(frame)}
+    // Pause when the portrait scrolls offscreen or the tab is hidden.
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){onscreen=es[0].isIntersecting;run()},{threshold:0})
+        .observe(canvas.parentElement);
+    }
+    document.addEventListener('visibilitychange',run);
+    run();
   }
 })();
 </script>

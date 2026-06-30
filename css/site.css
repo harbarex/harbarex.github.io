@@ -134,6 +134,10 @@ header.scrolled{border-bottom-color:var(--border)}
 .bio{color:var(--muted);font-size:1.08rem;line-height:1.55;letter-spacing:-.01em;margin-top:22px;max-width:62ch}
 .bio strong{color:var(--text);font-weight:600}
 .bio a{color:var(--accent)}
+.bio-list{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;text-align:left}
+.bio-list li{position:relative;padding-left:20px;color:var(--muted);font-size:1.02rem;line-height:1.5;letter-spacing:-.01em}
+.bio-list li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.bio-list a{color:var(--accent)}
 .portrait{position:relative;width:100%;max-width:440px}
 .portrait .frame{position:relative;border-radius:28px;overflow:hidden;border:1px solid var(--border);aspect-ratio:1/1.06;
   box-shadow:var(--shadow)}
@@ -148,6 +152,7 @@ header.scrolled{border-bottom-color:var(--border)}
   .profile{grid-template-columns:1fr;gap:36px;text-align:center;justify-items:center}
   .portrait{max-width:300px}
   .bio{margin-left:auto;margin-right:auto}
+  .bio-list{width:fit-content;margin-left:auto;margin-right:auto}
   .socials{justify-content:center}
 }
 
@@ -165,6 +170,7 @@ header.scrolled{border-bottom-color:var(--border)}
 .edu-ico svg{width:1.3em;height:1.3em}
 .edu-item h3,.edu-row h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .edu-item p,.edu-row p{color:var(--muted);font-size:.92rem;margin-top:3px}
+.edu-when{font-family:var(--mono);font-size:.76rem;color:var(--faint);margin-top:7px;letter-spacing:.03em}
 @media (max-width:680px){.edu{grid-template-columns:1fr}}
 
 /* ---------- Gallery (Apple horizontal scroller) ---------- */

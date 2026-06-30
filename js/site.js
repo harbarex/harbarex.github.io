@@ -83,5 +83,27 @@
     ids.forEach(function(id){var el=document.getElementById(id);if(el)spy.observe(el)});
   }
 
+  // Fit detail/listing titles & subtitles to one line, scaling the font
+  // down to the available width instead of wrapping (no-JS fallback: wrap).
+  function fitText(){
+    var vw=window.innerWidth;
+    document.querySelectorAll('.page-hero h1,.page-hero .sub').forEach(function(el){
+      el.style.whiteSpace='nowrap';
+      el.style.fontSize='';
+      // available width = viewport minus the element's left gutter on both sides
+      // (window.innerWidth can't be inflated by the overflowing nowrap text).
+      var avail=vw-2*el.getBoundingClientRect().left;
+      if(avail<=40)return;
+      var natural=el.scrollWidth;
+      if(natural>avail){
+        var cur=parseFloat(getComputedStyle(el).fontSize)||16;
+        el.style.fontSize=Math.max(10,cur*avail/natural*0.98)+'px';
+      }
+    });
+  }
+  var rt;
+  window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(fitText,150)},{passive:true});
+  fitText();
+
   var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
 })();

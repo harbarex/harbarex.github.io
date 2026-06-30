@@ -151,11 +151,11 @@ header.scrolled{border-bottom-color:var(--border)}
 .socials svg{width:18px;height:18px}
 
 /* ---------- About ---------- */
-.statement{font-size:clamp(1.6rem,3.6vw,2.8rem);line-height:1.18;letter-spacing:-.03em;font-weight:600;max-width:20ch;margin:0 auto;text-align:center}
+.statement{font-size:clamp(1.6rem,3.6vw,2.8rem);line-height:1.18;letter-spacing:-.03em;font-weight:600;max-width:22ch;margin:0 auto;text-align:center}
 .statement .dim{color:var(--muted)}
 .statement a{color:var(--accent)}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);
-  border-radius:var(--radius);overflow:hidden;margin-top:60px}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);
+  border-radius:var(--radius);overflow:hidden;margin-top:60px;max-width:760px;margin-left:auto;margin-right:auto}
 .fact{background:var(--bg);padding:26px 24px;transition:background .3s}
 .fact:hover{background:var(--surface-2)}
 .fact .k{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
@@ -248,8 +248,8 @@ header.scrolled{border-bottom-color:var(--border)}
   margin-bottom:26px;transition:color .25s,gap .25s}
 .backlink:hover{color:var(--accent);gap:11px}
 .backlink svg{width:15px;height:15px}
-.page-hero h1{font-size:clamp(2.2rem,5.2vw,3.8rem);line-height:1.04;letter-spacing:-.035em;font-weight:600;max-width:18ch}
-.page-hero .sub{color:var(--muted);font-size:1.2rem;margin-top:18px;max-width:60ch;letter-spacing:-.01em}
+.page-hero h1{font-size:clamp(2.2rem,5.2vw,3.8rem);line-height:1.04;letter-spacing:-.035em;font-weight:600}
+.page-hero .sub{color:var(--muted);font-size:clamp(1.05rem,2.2vw,1.25rem);margin-top:18px;letter-spacing:-.01em}
 .detail-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:22px;color:var(--faint);font-family:var(--mono);font-size:.8rem}
 .detail-meta .sep{opacity:.5}
 .linkrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
@@ -278,7 +278,7 @@ header.scrolled{border-bottom-color:var(--border)}
 .contact .sec-num{display:block;margin-bottom:20px}
 .contact h2{font-size:clamp(2.4rem,6.5vw,5rem);letter-spacing:-.04em;line-height:1.02;font-weight:600;margin-bottom:24px}
 .contact h2 a{color:var(--accent)}
-.contact p{color:var(--muted);font-size:1.2rem;max-width:44ch;margin:0 auto 34px;letter-spacing:-.01em}
+.contact p{color:var(--muted);font-size:clamp(1.05rem,2.2vw,1.2rem);margin:0 auto 34px;letter-spacing:-.01em}
 .contact-meta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
 /* ---------- Personal life ---------- */

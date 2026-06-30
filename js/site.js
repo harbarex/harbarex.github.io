@@ -1,6 +1,7 @@
 /* Ankit Billa — shared site behaviour (theme, nav, reveal, menu, filters, galleries) */
 (function(){
   var root=document.documentElement;
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
   // JS is running — cancel the inline fallback that would force-reveal everything.
   if(window.__revealFB)clearTimeout(window.__revealFB);
 
@@ -69,11 +70,15 @@
     if(next)next.addEventListener('click',function(){g.scrollBy({left:step(),behavior:'smooth'})});
     // Depth-of-field: keep the centre tiles crisp, fade & blur the rest.
     var tiles=g.querySelectorAll('.gtile'),raf=null;
+    var vis=function(t){return t.offsetParent!==null};   // false when display:none (e.g. filtered out)
     function focus(){
       raf=null;
-      var gr=g.getBoundingClientRect(),mid=gr.left+gr.width/2;
-      var sp=(tiles[0]?tiles[0].getBoundingClientRect().width:300)+20;  // tile width + gap
+      if(reduce){tiles.forEach(function(t){t.style.opacity='';t.style.filter=''});return;}
+      var gr=g.getBoundingClientRect(),mid=gr.left+gr.width/2,ref=null;
+      for(var i=0;i<tiles.length;i++){if(vis(tiles[i])){ref=tiles[i];break}}
+      var sp=(ref?ref.getBoundingClientRect().width:300)+20;  // spacing from a VISIBLE tile
       tiles.forEach(function(t){
+        if(!vis(t)){t.style.opacity='';t.style.filter='';return}  // clear stale styles on hidden tiles
         var r=t.getBoundingClientRect(),dt=Math.abs(r.left+r.width/2-mid)/sp;  // distance from centre in tile-widths
         var f=Math.min(1,Math.max(0,(dt-1.8)/0.9));    // centre ~4 tiles crisp, then ramp to the edges
         t.style.opacity=(1-0.5*f).toFixed(3);

@@ -52,6 +52,7 @@
         var cat=p.getAttribute('data-cat')||'';
         p.style.display=(k==='all'||cat.split(' ').indexOf(k)>-1)?'':'none';
       });
+      window.dispatchEvent(new Event('resize'));   // recompute gallery focus after filtering
     })});
   }
 
@@ -66,7 +67,22 @@
       next.disabled=g.scrollLeft+g.clientWidth>=g.scrollWidth-8;}
     if(prev)prev.addEventListener('click',function(){g.scrollBy({left:-step(),behavior:'smooth'})});
     if(next)next.addEventListener('click',function(){g.scrollBy({left:step(),behavior:'smooth'})});
-    g.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();
+    // Depth-of-field: keep the centre tiles crisp, fade & blur the rest.
+    var tiles=g.querySelectorAll('.gtile'),raf=null;
+    function focus(){
+      raf=null;
+      var gr=g.getBoundingClientRect(),mid=gr.left+gr.width/2,half=gr.width/2||1;
+      tiles.forEach(function(t){
+        var r=t.getBoundingClientRect(),nd=Math.abs(r.left+r.width/2-mid)/half;
+        var f=Math.min(1,Math.max(0,(nd-0.58)/0.5));   // 0 in the centre band, 1 at the edges
+        t.style.opacity=(1-0.55*f).toFixed(3);
+        t.style.filter=f>0.02?'blur('+(3*f).toFixed(2)+'px)':'';
+      });
+    }
+    function onScroll(){update();if(!raf)raf=requestAnimationFrame(focus)}
+    g.addEventListener('scroll',onScroll,{passive:true});
+    window.addEventListener('resize',onScroll);
+    update();focus();
   });
 
   // Scroll-spy for in-page (#anchor) nav links

@@ -1,4 +1,4 @@
-/* Ankit Billa — shared site behaviour (theme, nav, reveal, menu, filters) */
+/* Ankit Billa — shared site behaviour (theme, nav, reveal, menu, filters, galleries) */
 (function(){
   var root=document.documentElement;
   document.body.classList.remove('no-js');
@@ -7,17 +7,19 @@
   var saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
   if(saved){root.setAttribute('data-theme',saved)}
   else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:light)').matches){root.setAttribute('data-theme','light')}
+  function setMeta(){var m=document.querySelector('meta[name=theme-color]');
+    if(m)m.setAttribute('content',root.getAttribute('data-theme')==='dark'?'#000000':'#ffffff')}
+  setMeta();
   var tt=document.getElementById('theme-toggle');
   if(tt)tt.addEventListener('click',function(){
-    var next=root.getAttribute('data-theme')==='dark'?'light':'dark';
-    root.setAttribute('data-theme',next);
-    try{localStorage.setItem('theme',next)}catch(e){}
-    var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',next==='dark'?'#0a0b0e':'#f6f7fb');
+    root.setAttribute('data-theme',root.getAttribute('data-theme')==='dark'?'light':'dark');
+    try{localStorage.setItem('theme',root.getAttribute('data-theme'))}catch(e){}
+    setMeta();
   });
 
   // Sticky nav
   var hdr=document.getElementById('hdr');
-  if(hdr){var onScroll=function(){hdr.classList.toggle('scrolled',window.scrollY>24)};onScroll();
+  if(hdr){var onScroll=function(){hdr.classList.toggle('scrolled',window.scrollY>10)};onScroll();
     window.addEventListener('scroll',onScroll,{passive:true});}
 
   // Mobile menu
@@ -38,15 +40,46 @@
     setTimeout(showAll,2500);
   }else{showAll()}
 
-  // Filters (listing pages)
+  // Filters (toggles display of [data-cat] items; substring match)
   var filters=document.querySelectorAll('.filter');
   if(filters.length){
     var items=document.querySelectorAll('[data-cat]');
     filters.forEach(function(f){f.addEventListener('click',function(){
       filters.forEach(function(x){x.classList.remove('active')});f.classList.add('active');
       var k=f.getAttribute('data-f');
-      items.forEach(function(p){p.style.display=(k==='all'||p.getAttribute('data-cat').indexOf(k)>-1)?'':'none'});
+      items.forEach(function(p){
+        var cat=p.getAttribute('data-cat')||'';
+        p.style.display=(k==='all'||cat.split(' ').indexOf(k)>-1)?'':'none';
+      });
     })});
+  }
+
+  // Horizontal galleries — arrow controls + edge state
+  document.querySelectorAll('.gallery').forEach(function(g){
+    var sec=g.closest('section')||g.parentElement;
+    var prev=sec&&sec.querySelector('[data-dir=prev]'),next=sec&&sec.querySelector('[data-dir=next]');
+    function step(){var t=g.querySelector('.gtile');var w=t?t.getBoundingClientRect().width+20:320;
+      return Math.max(1,Math.floor(g.clientWidth/w))*w}
+    function update(){if(!prev||!next)return;
+      prev.disabled=g.scrollLeft<8;
+      next.disabled=g.scrollLeft+g.clientWidth>=g.scrollWidth-8;}
+    if(prev)prev.addEventListener('click',function(){g.scrollBy({left:-step(),behavior:'smooth'})});
+    if(next)next.addEventListener('click',function(){g.scrollBy({left:step(),behavior:'smooth'})});
+    g.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();
+  });
+
+  // Scroll-spy for in-page (#anchor) nav links
+  var hashLinks={};
+  document.querySelectorAll('.nav-links a[href^="#"]').forEach(function(a){hashLinks[a.getAttribute('href').slice(1)]=a});
+  var ids=Object.keys(hashLinks);
+  if(ids.length&&'IntersectionObserver' in window){
+    var spy=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){
+        ids.forEach(function(k){hashLinks[k].classList.remove('active')});
+        if(hashLinks[e.target.id])hashLinks[e.target.id].classList.add('active');
+      }})
+    },{threshold:.5});
+    ids.forEach(function(id){var el=document.getElementById(id);if(el)spy.observe(el)});
   }
 
   var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();

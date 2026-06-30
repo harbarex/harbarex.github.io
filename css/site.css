@@ -309,6 +309,8 @@ footer{border-top:1px solid var(--border);padding:34px 0;margin-top:30px}
 .foot{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;color:var(--faint);font-size:.85rem}
 .foot a:hover{color:var(--text)}
 .foot .fl{display:flex;gap:18px}
+.foot .fl a{display:inline-flex;align-items:center;gap:7px}
+.foot .fl svg{width:15px;height:15px}
 
 /* ---------- Reveal ----------
    Content is visible by default; the hidden→animate state applies ONLY

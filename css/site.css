@@ -153,6 +153,7 @@ header.scrolled{border-bottom-color:var(--border)}
 .edu-item{display:flex;align-items:center;gap:14px;border:1px solid var(--border);border-radius:var(--radius);
   background:var(--surface);padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
 .edu-item:hover{transform:translateY(-3px);border-color:var(--border-strong)}
+.edu-list{display:flex;flex-direction:column;gap:18px}
 .edu-ico{flex:0 0 auto;color:var(--accent);display:flex}
 .edu-ico svg{width:1.3em;height:1.3em}
 .edu-item h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}

@@ -1,7 +1,8 @@
 /* Ankit Billa — shared site behaviour (theme, nav, reveal, menu, filters, galleries) */
 (function(){
   var root=document.documentElement;
-  document.body.classList.remove('no-js');
+  // JS is running — cancel the inline fallback that would force-reveal everything.
+  if(window.__revealFB)clearTimeout(window.__revealFB);
 
   // Theme
   var saved=null;try{saved=localStorage.getItem('theme')}catch(e){}

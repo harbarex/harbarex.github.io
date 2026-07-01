@@ -61,6 +61,7 @@
   document.querySelectorAll('.gallery').forEach(function(g){
     var sec=g.closest('section')||g.parentElement;
     var prev=sec&&sec.querySelector('[data-dir=prev]'),next=sec&&sec.querySelector('[data-dir=next]');
+    var gliding=false;                            // true while an arrow is held (pauses depth-of-field recompute)
     function step(){                              // width of one tile + gap, measured on the first VISIBLE tile
       var tiles=g.querySelectorAll('.gtile');
       for(var i=0;i<tiles.length;i++){if(tiles[i].offsetParent!==null)return tiles[i].getBoundingClientRect().width+20}
@@ -72,14 +73,17 @@
     // Tap an arrow to advance one tile; press and hold to glide continuously.
     [[prev,-1],[next,1]].forEach(function(p){
       var btn=p[0],dir=p[1];if(!btn)return;
-      var hold=null,graf=null,glided=false;
-      function glide(){graf=requestAnimationFrame(glide);g.scrollLeft+=dir*14}
-      function startGlide(){glided=true;
+      var hold=null,graf=null,glided=false,last=0;
+      function glide(ts){graf=requestAnimationFrame(glide);
+        var dt=last?ts-last:16;last=ts;if(dt>50)dt=50;   // px-per-ms, so glide speed is independent of display refresh rate
+        g.scrollLeft+=dir*0.85*dt}
+      function startGlide(){glided=true;gliding=true;last=0;
         g.style.scrollSnapType='none';g.style.scrollBehavior='auto';  // stop CSS smooth-scroll fighting the per-frame steps (jitter)
         window.addEventListener('pointerup',endGlide);   // catch a release outside the button (e.g. after it disables at an edge)
-        glide()}
+        graf=requestAnimationFrame(glide)}
       function endGlide(){if(hold){clearTimeout(hold);hold=null}
-        if(graf){cancelAnimationFrame(graf);graf=null;g.style.scrollSnapType='';g.style.scrollBehavior=''}
+        if(graf){cancelAnimationFrame(graf);graf=null;g.style.scrollSnapType='';g.style.scrollBehavior='';
+          gliding=false;if(!raf)raf=requestAnimationFrame(focus)}   // recompute depth-of-field once the glide settles
         window.removeEventListener('pointerup',endGlide)}
       btn.addEventListener('pointerdown',function(){glided=false;hold=setTimeout(startGlide,250)});
       btn.addEventListener('pointerup',endGlide);
@@ -107,7 +111,7 @@
         t.style.filter=f>0.02?'blur('+(1*f).toFixed(2)+'px)':'';
       });
     }
-    function onScroll(){update();if(!raf)raf=requestAnimationFrame(focus)}
+    function onScroll(){update();if(gliding)return;if(!raf)raf=requestAnimationFrame(focus)}   // skip blur recompute while gliding
     g.addEventListener('scroll',onScroll,{passive:true});
     window.addEventListener('resize',onScroll);
     update();focus();

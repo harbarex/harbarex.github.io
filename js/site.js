@@ -61,13 +61,27 @@
   document.querySelectorAll('.gallery').forEach(function(g){
     var sec=g.closest('section')||g.parentElement;
     var prev=sec&&sec.querySelector('[data-dir=prev]'),next=sec&&sec.querySelector('[data-dir=next]');
-    function step(){var t=g.querySelector('.gtile');var w=t?t.getBoundingClientRect().width+20:320;
-      return Math.max(1,Math.floor(g.clientWidth/w))*w}
+    function step(){var t=g.querySelector('.gtile');return t?t.getBoundingClientRect().width+20:320}
     function update(){if(!prev||!next)return;
       prev.disabled=g.scrollLeft<8;
       next.disabled=g.scrollLeft+g.clientWidth>=g.scrollWidth-8;}
-    if(prev)prev.addEventListener('click',function(){g.scrollBy({left:-step(),behavior:'smooth'})});
-    if(next)next.addEventListener('click',function(){g.scrollBy({left:step(),behavior:'smooth'})});
+    // Tap an arrow to advance one tile; press and hold to glide continuously.
+    [[prev,-1],[next,1]].forEach(function(p){
+      var btn=p[0],dir=p[1];if(!btn)return;
+      var hold=null,graf=null,glided=false;
+      function glide(){graf=requestAnimationFrame(glide);g.scrollLeft+=dir*6}
+      function startGlide(){glided=true;g.style.scrollSnapType='none';glide()}
+      function endGlide(){if(hold){clearTimeout(hold);hold=null}
+        if(graf){cancelAnimationFrame(graf);graf=null;g.style.scrollSnapType=''}}
+      btn.addEventListener('pointerdown',function(){glided=false;hold=setTimeout(startGlide,250)});
+      btn.addEventListener('pointerup',endGlide);
+      btn.addEventListener('pointerleave',endGlide);
+      window.addEventListener('pointerup',endGlide);
+      btn.addEventListener('click',function(){
+        if(glided){glided=false;return}          // was a press-and-hold, not a tap
+        g.scrollBy({left:dir*step(),behavior:'smooth'});
+      });
+    });
     // Depth-of-field: keep the centre tiles crisp, fade & blur the rest.
     var tiles=g.querySelectorAll('.gtile'),raf=null;
     var vis=function(t){return t.offsetParent!==null};   // false when display:none (e.g. filtered out)

@@ -171,7 +171,6 @@ header.scrolled .icon-btn{width:34px;height:34px}
 [data-theme="dark"] .edu-item:hover{border-color:rgba(0,0,0,.28)}
 [data-theme="dark"] .edu-item h3{color:#1d1d1f}
 [data-theme="dark"] .edu-item .work-loc{color:rgba(34,34,34,.62)}
-[data-theme="dark"] .edu-item .edu-ico{color:#222222}
 .work-logo.logo-dark{display:none}
 [data-theme="dark"] .work-logo.logo-light{display:none}
 [data-theme="dark"] .work-logo.logo-dark{display:block}

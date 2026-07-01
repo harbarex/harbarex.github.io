@@ -73,12 +73,13 @@
     [[prev,-1],[next,1]].forEach(function(p){
       var btn=p[0],dir=p[1];if(!btn)return;
       var hold=null,graf=null,glided=false;
-      function glide(){graf=requestAnimationFrame(glide);g.scrollLeft+=dir*6}
-      function startGlide(){glided=true;g.style.scrollSnapType='none';
+      function glide(){graf=requestAnimationFrame(glide);g.scrollLeft+=dir*14}
+      function startGlide(){glided=true;
+        g.style.scrollSnapType='none';g.style.scrollBehavior='auto';  // stop CSS smooth-scroll fighting the per-frame steps (jitter)
         window.addEventListener('pointerup',endGlide);   // catch a release outside the button (e.g. after it disables at an edge)
         glide()}
       function endGlide(){if(hold){clearTimeout(hold);hold=null}
-        if(graf){cancelAnimationFrame(graf);graf=null;g.style.scrollSnapType=''}
+        if(graf){cancelAnimationFrame(graf);graf=null;g.style.scrollSnapType='';g.style.scrollBehavior=''}
         window.removeEventListener('pointerup',endGlide)}
       btn.addEventListener('pointerdown',function(){glided=false;hold=setTimeout(startGlide,250)});
       btn.addEventListener('pointerup',endGlide);

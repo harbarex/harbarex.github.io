@@ -163,15 +163,12 @@ header.scrolled .icon-btn{width:34px;height:34px}
 /* ---------- Education ---------- */
 .edu-sec{padding:clamp(48px,7vh,72px) 0}
 .edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch}
-/* Current-role pill — translucent frosted charcoal (logo has no background) */
+/* Current-role pill — solid charcoal (logo has no background) */
 .edu-item{display:flex;align-items:flex-start;gap:14px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
-  background:rgba(34,34,34,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
-  padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
+  background:#222222;padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
 .edu-item:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.32)}
 .edu-item .edu-ico{margin-top:3px}   /* keep the briefcase inline with the title */
 .work-body{flex:1;min-width:0}
-.work-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
-.work-when{color:rgba(245,245,247,.5);font-size:.84rem;white-space:nowrap;flex-shrink:0}
 .work-brand{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:12px}
 .work-loc{color:rgba(245,245,247,.6);font-size:.92rem}
 /* Education degrees: plain (no pill), one grad-cap per degree */

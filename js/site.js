@@ -61,7 +61,11 @@
   document.querySelectorAll('.gallery').forEach(function(g){
     var sec=g.closest('section')||g.parentElement;
     var prev=sec&&sec.querySelector('[data-dir=prev]'),next=sec&&sec.querySelector('[data-dir=next]');
-    function step(){var t=g.querySelector('.gtile');return t?t.getBoundingClientRect().width+20:320}
+    function step(){                              // width of one tile + gap, measured on the first VISIBLE tile
+      var tiles=g.querySelectorAll('.gtile');
+      for(var i=0;i<tiles.length;i++){if(tiles[i].offsetParent!==null)return tiles[i].getBoundingClientRect().width+20}
+      return 320;
+    }
     function update(){if(!prev||!next)return;
       prev.disabled=g.scrollLeft<8;
       next.disabled=g.scrollLeft+g.clientWidth>=g.scrollWidth-8;}
@@ -70,13 +74,16 @@
       var btn=p[0],dir=p[1];if(!btn)return;
       var hold=null,graf=null,glided=false;
       function glide(){graf=requestAnimationFrame(glide);g.scrollLeft+=dir*6}
-      function startGlide(){glided=true;g.style.scrollSnapType='none';glide()}
+      function startGlide(){glided=true;g.style.scrollSnapType='none';
+        window.addEventListener('pointerup',endGlide);   // catch a release outside the button (e.g. after it disables at an edge)
+        glide()}
       function endGlide(){if(hold){clearTimeout(hold);hold=null}
-        if(graf){cancelAnimationFrame(graf);graf=null;g.style.scrollSnapType=''}}
+        if(graf){cancelAnimationFrame(graf);graf=null;g.style.scrollSnapType=''}
+        window.removeEventListener('pointerup',endGlide)}
       btn.addEventListener('pointerdown',function(){glided=false;hold=setTimeout(startGlide,250)});
       btn.addEventListener('pointerup',endGlide);
       btn.addEventListener('pointerleave',endGlide);
-      window.addEventListener('pointerup',endGlide);
+      btn.addEventListener('pointercancel',endGlide);    // interrupted press (system gesture / scroll takeover)
       btn.addEventListener('click',function(){
         if(glided){glided=false;return}          // was a press-and-hold, not a tap
         g.scrollBy({left:dir*step(),behavior:'smooth'});

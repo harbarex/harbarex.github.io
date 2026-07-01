@@ -163,10 +163,18 @@ header.scrolled .icon-btn{width:34px;height:34px}
 /* ---------- Education ---------- */
 .edu-sec{padding:clamp(34px,5vh,52px) 0}
 .edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch}
-/* Current-role pill — solid charcoal (logo has no background) */
+/* Current-role pill — charcoal (light theme) / creme (dark theme), inverse of the page */
 .edu-item{display:flex;align-items:flex-start;gap:14px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
   background:#222222;padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
 .edu-item:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.32)}
+[data-theme="dark"] .edu-item{background:#F9F2E6;border-color:rgba(0,0,0,.12)}
+[data-theme="dark"] .edu-item:hover{border-color:rgba(0,0,0,.28)}
+[data-theme="dark"] .edu-item h3{color:#1d1d1f}
+[data-theme="dark"] .edu-item .work-loc{color:rgba(34,34,34,.62)}
+[data-theme="dark"] .edu-item .edu-ico{color:#222222}
+.work-logo.logo-dark{display:none}
+[data-theme="dark"] .work-logo.logo-light{display:none}
+[data-theme="dark"] .work-logo.logo-dark{display:block}
 .edu-item .edu-ico{margin-top:0}   /* keep the briefcase inline with the title */
 .work-body{flex:1;min-width:0}
 .work-brand{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:12px}

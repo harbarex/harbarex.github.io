@@ -164,14 +164,15 @@ header.scrolled .icon-btn{width:34px;height:34px}
 .edu-sec{padding:clamp(48px,7vh,72px) 0}
 .edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch}
 /* Current-role pill — translucent frosted charcoal (logo has no background) */
-.edu-item{display:flex;align-items:center;gap:14px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
+.edu-item{display:flex;align-items:flex-start;gap:14px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
   background:rgba(34,34,34,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
   padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
 .edu-item:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.32)}
+.edu-item .edu-ico{margin-top:3px}   /* keep the briefcase inline with the title */
 .work-body{flex:1;min-width:0}
 .work-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
 .work-when{color:rgba(245,245,247,.5);font-size:.84rem;white-space:nowrap;flex-shrink:0}
-.work-brand{display:flex;align-items:center;gap:13px;margin-top:12px}
+.work-brand{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:12px}
 .work-loc{color:rgba(245,245,247,.6);font-size:.92rem}
 /* Education degrees: plain (no pill), one grad-cap per degree */
 .edu-degrees{display:flex;flex-direction:column;gap:20px;padding:8px 0}
@@ -183,7 +184,7 @@ header.scrolled .icon-btn{width:34px;height:34px}
 .edu-item p,.edu-row p{color:var(--muted);font-size:.92rem;margin-top:3px}
 .edu-item h3{color:#f5f5f7}
 .edu-item p{color:rgba(245,245,247,.6)}
-.work-logo{display:block;width:clamp(120px,42%,145px);height:auto;flex-shrink:0}
+.work-logo{display:block;width:clamp(92px,30%,112px);height:auto;flex-shrink:0}
 @media (max-width:680px){.edu{grid-template-columns:1fr}}
 
 /* ---------- Gallery (Apple horizontal scroller) ---------- */

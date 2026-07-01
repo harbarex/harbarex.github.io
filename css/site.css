@@ -167,7 +167,7 @@ header.scrolled .icon-btn{width:34px;height:34px}
 .edu-item{display:flex;align-items:flex-start;gap:14px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
   background:#222222;padding:22px 24px;transition:transform .35s var(--ease),border-color .35s}
 .edu-item:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.32)}
-.edu-item .edu-ico{margin-top:3px}   /* keep the briefcase inline with the title */
+.edu-item .edu-ico{margin-top:0}   /* keep the briefcase inline with the title */
 .work-body{flex:1;min-width:0}
 .work-brand{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:12px}
 .work-loc{color:rgba(245,245,247,.6);font-size:.92rem}

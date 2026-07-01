@@ -177,7 +177,7 @@ header.scrolled .icon-btn{width:34px;height:34px}
 .edu-item p,.edu-row p{color:var(--muted);font-size:.92rem;margin-top:3px}
 .edu-item h3{color:#f5f5f7}
 .edu-item p{color:rgba(245,245,247,.6)}
-.work-logo{display:block;width:180px;height:40px;object-fit:cover;margin:10px 0}
+.work-logo{display:block;width:clamp(130px,46%,160px);height:auto;margin:11px 0}
 @media (max-width:680px){.edu{grid-template-columns:1fr}}
 
 /* ---------- Gallery (Apple horizontal scroller) ---------- */

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="640" viewBox="0 0 800 640" role="img" aria-label="Sauron image placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#20242e"/>
+      <stop offset="1" stop-color="#12151c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="640" fill="url(#g)"/>
+  <g fill="none" stroke="#5a6172" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" transform="translate(360,290) scale(3)">
+    <rect x="0" y="0" width="24" height="18" rx="2"/>
+    <circle cx="12" cy="9" r="4"/>
+  </g>
+</svg>

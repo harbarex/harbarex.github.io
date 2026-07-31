@@ -310,6 +310,11 @@ header.scrolled .icon-btn{width:34px;height:34px}
 .pager a:hover{color:var(--accent)}
 .pager .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:6px}
 .pager .t{font-weight:600;letter-spacing:-.01em}
+.pager.center{justify-content:center}
+.totop{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.78rem;letter-spacing:.04em;
+  color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:11px 20px;transition:color .25s,border-color .25s,gap .25s}
+.totop:hover{color:var(--accent);border-color:var(--border-strong);gap:12px}
+.totop svg{width:15px;height:15px}
 
 /* ---------- Contact ---------- */
 .contact{text-align:center;padding:clamp(60px,10vh,104px) 0}
